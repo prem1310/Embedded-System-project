@@ -1,0 +1,191 @@
+#define S1_Red 0
+#define S1_Yellow 1
+#define S1_Green 2
+#define S1_Green_R 3
+#define S1_Green_L 4
+
+#define S2_Red 5
+#define S2_Yellow 6
+#define S2_Green 7
+#define S2_Green_R 8
+#define S2_Green_L 9
+
+#define S3_Red 15
+#define S3_Yellow 16
+#define S3_Green 17
+#define S3_Green_R 18
+#define S3_Green_L 19
+
+#define S4_Red 10
+#define S4_Yellow 11
+#define S4_Green 12
+#define S4_Green_R 13
+#define S4_Green_L 14
+
+void setup(){
+  //signal 1
+  pinMode(S1_Red,OUTPUT);
+  pinMode(S1_Yellow,OUTPUT);
+  pinMode(S1_Green,OUTPUT);
+  pinMode(S1_Green_R,OUTPUT);
+  pinMode(S1_Green_L,OUTPUT);
+  //signal 2
+  pinMode(S2_Red,OUTPUT);
+  pinMode(S2_Yellow,OUTPUT);
+  pinMode(S2_Green,OUTPUT);
+  pinMode(S2_Green_R,OUTPUT);
+  pinMode(S2_Green_L,OUTPUT);
+  //signal 3
+  pinMode(S3_Red,OUTPUT);
+  pinMode(S3_Yellow,OUTPUT);
+  pinMode(S3_Green,OUTPUT);
+  pinMode(S3_Green_R,OUTPUT);
+  pinMode(S3_Green_L,OUTPUT);
+  //siganl 4
+  pinMode(S4_Red,OUTPUT);
+  pinMode(S4_Yellow,OUTPUT);
+  pinMode(S4_Green,OUTPUT);
+  pinMode(S4_Green_R,OUTPUT);
+  pinMode(S4_Green_L,OUTPUT);
+}
+
+void loop(){
+//daliy routine signal
+
+  //signal 1
+  digitalWrite(S1_Red,HIGH);
+  delay(200);
+  digitalWrite(S1_Red,LOW);
+  digitalWrite(S2_Red,HIGH);
+  digitalWrite(S3_Red,HIGH);
+  digitalWrite(S4_Red,HIGH);
+  delay(300);
+  digitalWrite(S1_Green,HIGH);
+  digitalWrite(S1_Green_R,HIGH);
+  digitalWrite(S1_Green_L,HIGH);
+  digitalWrite(S4_Green_L,HIGH);
+  delay(7000);
+  digitalWrite(S1_Green,LOW);
+  digitalWrite(S1_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S1_Yellow,LOW);
+  delay(500);
+  digitalWrite(S1_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S1_Yellow,LOW);
+  delay(300);
+  digitalWrite(S1_Green_R,LOW);
+  digitalWrite(S1_Green_L,LOW);
+  digitalWrite(S4_Green_L,LOW);
+
+  //signal 2
+  digitalWrite(S1_Red,HIGH);
+  digitalWrite(S2_Red,LOW);
+  digitalWrite(S3_Red,HIGH);
+  digitalWrite(S4_Red,HIGH);
+  delay(500);
+  digitalWrite(S2_Green,HIGH);
+  digitalWrite(S2_Green_R,HIGH);
+  digitalWrite(S2_Green_L,HIGH);
+  digitalWrite(S1_Green_L,HIGH);
+  delay(7000);
+  digitalWrite(S2_Green,LOW);
+  digitalWrite(S2_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S2_Yellow,LOW);
+  delay(500);
+  digitalWrite(S2_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S2_Yellow,LOW);
+  delay(300);
+  digitalWrite(S2_Green_R,LOW);
+  digitalWrite(S2_Green_L,LOW);
+  digitalWrite(S1_Green_L,LOW);
+
+  //signal 3
+  digitalWrite(S1_Red,HIGH);
+  digitalWrite(S2_Red,HIGH);
+  digitalWrite(S3_Red,LOW);
+  digitalWrite(S4_Red,HIGH);
+  delay(500);
+  digitalWrite(S3_Green,HIGH);
+  digitalWrite(S3_Green_R,HIGH);
+  digitalWrite(S3_Green_L,HIGH);
+  digitalWrite(S2_Green_L,HIGH);
+  delay(7000);
+  digitalWrite(S3_Green,LOW);
+  digitalWrite(S3_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S3_Yellow,LOW);
+  delay(500);
+  digitalWrite(S3_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S3_Yellow,LOW);
+  delay(300);
+  digitalWrite(S3_Green_R,LOW);
+  digitalWrite(S3_Green_L,LOW);
+  digitalWrite(S2_Green_L,LOW);
+
+  //signal 4
+  digitalWrite(S1_Red,HIGH);
+  digitalWrite(S2_Red,HIGH);
+  digitalWrite(S3_Red,HIGH);
+  digitalWrite(S4_Red,LOW);
+  delay(500);
+  digitalWrite(S4_Green,HIGH);
+  digitalWrite(S4_Green_R,HIGH);
+  digitalWrite(S4_Green_L,HIGH);
+  digitalWrite(S3_Green_L,HIGH);
+  delay(7000);
+  digitalWrite(S4_Green,LOW);
+  digitalWrite(S4_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S4_Yellow,LOW);
+  delay(500);
+  digitalWrite(S4_Yellow,HIGH);
+  delay(500);
+  digitalWrite(S4_Yellow,LOW);
+  delay(300);
+  digitalWrite(S4_Green_R,LOW);
+  digitalWrite(S4_Green_L,LOW);
+  digitalWrite(S3_Green_L,LOW);
+  
+
+/*
+  //night signal
+    //all red
+      digitalWrite(S1_Red,LOW);
+      digitalWrite(S2_Red,LOW);
+      digitalWrite(S3_Red,LOW);
+      digitalWrite(S4_Red,LOW);
+    //all green
+      digitalWrite(S1_Green,LOW);
+      digitalWrite(S2_Green,LOW);
+      digitalWrite(S3_Green,LOW);
+      digitalWrite(S4_Green,LOW);
+    //all green right
+      digitalWrite(S1_Green_R,LOW);
+      digitalWrite(S2_Green_R,LOW);
+      digitalWrite(S3_Green_R,LOW);
+      digitalWrite(S4_Green_R,LOW);
+    //all green left
+      digitalWrite(S1_Green_L,LOW);
+      digitalWrite(S2_Green_L,LOW);
+      digitalWrite(S3_Green_L,LOW);
+      digitalWrite(S4_Green_L,LOW);
+    //all yellow
+      digitalWrite(S1_Yellow,HIGH);
+      digitalWrite(S2_Yellow,HIGH);
+      digitalWrite(S3_Yellow,HIGH);
+      digitalWrite(S4_Yellow,HIGH);
+
+      delay(500);
+
+      digitalWrite(S1_Yellow,LOW);
+      digitalWrite(S2_Yellow,LOW);
+      digitalWrite(S3_Yellow,LOW);
+      digitalWrite(S4_Yellow,LOW);
+
+      delay(500);
+*/
+}
